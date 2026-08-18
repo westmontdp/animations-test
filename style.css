@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 body {
   background-color: #131316;
   color: #ffffff;
-  font-family: "Outfit";
+  font-family: "Outfit", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -16,7 +17,7 @@ section {
 
 .hidden {
   opacity: 0;
-  transition: all 1s;
+  filter: blur(5px);
   transform: translateX(-100%);
   transition: all 1s;
 }
@@ -24,5 +25,5 @@ section {
 .show {
   opacity: 1;
   filter: blur(0);
-  transform: translatex(0);
+  transform: translateX(0);
 }
