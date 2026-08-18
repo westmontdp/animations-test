@@ -1,1 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+body {
+  background-color: #131316;
+  color: #ffffff;
+  font-family: "Anton";
+  padding: 0;
+  margin: 0;
+}
 
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
