@@ -1,12 +1,17 @@
-const observer = new IntersectionObserver((entreis) => {
+const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    consle.log(entry)
-    if(entry.isIntersecting) {
-      entry.target.classList.add('show');
+    console.log(entry);
+
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
     } else {
-      entry.target.classList.remove('show');
+      entry.target.classList.remove("show");
     }
   });
 });
 
-const hiddenElements = document.querySelectorAll('.hidden');
+const hiddenElements = document.querySelectorAll(".hidden");
+
+hiddenElements.forEach((element) => {
+  observer.observe(element);
+});
